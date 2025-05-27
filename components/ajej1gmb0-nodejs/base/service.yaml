@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ajej1gmb0-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ajej1gmb0-nodejs 
+  name: ajej1gmb0-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: ajej1gmb0-nodejs 
